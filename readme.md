@@ -1,0 +1,1 @@
+west build -b nice_nano_v2 -- -DSHIELD="corne_left nice_view_adapter nice_view_gem"  -DZMK_EXTRA_MODULE="Users/davidchen/Repos/nice-view-gem" 
