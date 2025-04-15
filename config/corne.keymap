@@ -11,6 +11,7 @@
 #define default_layer 0
 #define layer_lower   1
 #define layer_raise   2
+#define media   3
 
 / {
 
@@ -195,5 +196,4 @@
             >;
         };
     };        
-    };
 };
