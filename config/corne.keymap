@@ -152,7 +152,7 @@
 &kp TAB    &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P          &kp BSPC
 &kp LCTRL  &mt LGUI A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G        &kp H    &mt RCTRL J  &mt RSHFT K  &mt RALT L  &mt RGUI SEMI  &kp SQT
 &kp LSHFT  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp ESC
-                                   &lt media ESC     &lt nav SPACE    &lt mouse TAB        &mo 2    &kp RET      &lt fun DEL
+                                   &lt media ESC     &lt nav SPACE    &lt mouse TAB        &kp Z    &lt sym RET      &lt fun DEL
             >;
         };
 
