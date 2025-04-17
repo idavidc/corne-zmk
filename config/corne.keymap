@@ -17,9 +17,7 @@
 #define blueteef 6
 #define num 7
 
-
 / {
-
     combos {
         compatible = "zmk,combos";
 
@@ -137,8 +135,6 @@
         };
     };
 
-
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -150,10 +146,10 @@
             //                    | GUI | SPC | LWR |   | RSE | ENT  | DEL |
 
             bindings = <
-&kp TAB    &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P          &kp BSPC
-&kp LCTRL  &mt LGUI A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G        &kp H    &mt RCTRL J  &mt RSHFT K  &mt RALT L  &mt RGUI SEMI  &kp SQT
-&kp LSHFT  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp ESC
-                                   &lt media ESC     &lt nav SPACE    &lt mouse TAB        &lt num BSPC    &lt sym RET      &lt fun DEL
+&kp TAB    &kp Q       &kp W       &kp E          &kp R          &kp T            &kp Y         &kp U        &kp I        &kp O       &kp P          &kp BSPC
+&kp LCTRL  &mt LGUI A  &mt LALT S  &mt LSHFT D    &mt LCTRL F    &kp G            &kp H         &mt RCTRL J  &mt RSHFT K  &mt RALT L  &mt RGUI SEMI  &kp SQT
+&kp LSHFT  &kp Z       &kp X       &kp C          &kp V          &kp B            &kp N         &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp ESC
+                                   &lt media ESC  &lt nav SPACE  &lt mouse TAB    &lt num BSPC  &lt sym RET  &lt fun DEL
             >;
         };
 
@@ -165,10 +161,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &kp N6    &kp N7    &kp UP    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT    &trans    &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans        &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE     &kp RET   &trans    &kp RALT
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &kp N6   &kp N7    &kp UP    &kp N9     &kp N0  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT    &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans        &trans   &trans    &trans    &trans     &trans  &trans
+                                        &kp LGUI      &trans        &kp SPACE     &kp RET  &trans    &kp RALT
             >;
         };
 
@@ -180,12 +176,13 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(C)  &kp AMPS   &kp LS(C)  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
+
         media {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -200,6 +197,7 @@
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
+
         fun {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -208,12 +206,13 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp F12  &kp F7  &kp F8     &kp F9    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp F11    &kp F4  &kp F5   &kp F6    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &kp F10    &kp F1  &kp F2   &kp F3    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB  &kp F12  &kp F7  &kp F8  &kp F9     &kp CARET    &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC   &kp LCTRL
+&kp F11  &kp F4   &kp F5  &kp F6  &trans     &kp MINUS    &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE  &kp LSHFT
+&kp F10  &kp F1   &kp F2  &kp F3  &trans     &kp UNDER    &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE  &kp LGUI
+                          &trans  &kp SPACE  &kp RET      &trans     &kp RALT
             >;
         };
+
         sym {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  &  |  *  |  (  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -222,12 +221,12 @@
             //                    | GUI |  )  | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp AMPS    &kp ASTRK  &kp LPAR  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp DLLR    &kp PRCNT  &kp CARET    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &kp EXCL    &kp AT     &kp HASH    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &kp RPAR    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB    &kp AMPS  &kp ASTRK  &kp LPAR   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &kp DLLR  &kp PRCNT  &kp CARET  &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &kp EXCL  &kp AT     &kp HASH   &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                &kp LGUI   &kp RPAR  &kp SPACE    &kp RET    &trans     &kp RALT
             >;
-        };        
+        };
 
         blueteef {
             // -----------------------------------------------------------------------------------------
@@ -253,10 +252,10 @@
 
             bindings = <
 &kp TAB    &kp EXCL  &kp N7  &kp N8    &kp N9  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &kp N4  &kp N5    &kp N6    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &kp N1  &kp N2    &kp N3    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &kp N0    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp LCTRL  &trans    &kp N4  &kp N5    &kp N6  &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &trans    &kp N1  &kp N2    &kp N3  &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                             &kp LGUI  &kp N0  &kp SPACE    &kp RET    &trans     &kp RALT
             >;
-        };        
-    };        
+        };
+    };
 };
